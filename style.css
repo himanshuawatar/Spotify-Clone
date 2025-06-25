@@ -1,163 +1,152 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-  font-family: sans-serif;
+body{
+    background-color:#1DB954;
 }
 
-body {
-  background-color: #1DB954;
-}
-
-/* ------------------ NAVBAR ------------------ */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #191414;
-  width: 100%;
-  height: 60px;
-  padding: 0 20px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #191414;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-#image-logo {
-  width: 40px;
+#image-logo{
+    width: 40px;
 }
 
-h2 {
-  color: white;
+h2{
+    color: white;
 }
 
 ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    list-style: none;
 }
 
 li {
-  display: inline;
+    display: inline;
 }
 
-a {
-  color: white;
-  text-decoration: none;
+a{
+    color: white;
+    text-decoration: none;
 }
 
-/* ------------------ MAIN LAYOUT ------------------ */
-.main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px;
+.main{
+    display: flex;
 }
 
-.left-content {
-  color: white;
-  background-color: #191414;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  width: 30%;
-  min-width: 280px;
-  padding: 10px;
+.left-content{
+    color: white;
+    background-color: #191414;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 30%;
+    height:400px;
 }
 
-.your-library {
-  margin: 10px 0 20px 10px;
+.your-library{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-bottom: 50px;
 }
 
-.create-playlist {
-  background-color: #282525;
-  border-radius: 10px;
-  padding: 10px;
+.create-playlist{
+    margin: 10px;
+    background-color: #282525;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.links {
-  display: flex;
-  font-size: smaller;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding: 10px;
-  gap: 5px;
+.links{
+    display: flex;
+    font-size: smaller;
+    justify-content:space-evenly;
+    color: white;
+    width: 100%;
+    height:100%;
+    padding: 10px;
 }
 
-button {
-  padding: 10px;
-  border-radius: 20px;
-  border: none;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  background-color: white;
-  cursor: pointer;
+
+button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-.right-content {
-  display: flex;
-  flex-direction: column;
-  background-color: #191414;
-  width: 65%;
-  min-width: 300px;
-  margin-left: 10px;
-  border-radius: 10px;
-  padding: 10px;
+.right-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #191414;
+    width: 70%;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    scroll-behavior: smooth;
 }
 
-.Trending-song {
-  margin: 10px 0 20px 10px;
+.Trending-song{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-bottom: 50px;
 }
 
-.music {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+.music{
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    
+
 }
 
-.music-1, .music-2, .music-3, .music-4, .music-5 {
-  background-color: #282525;
-  width: 150px;
-  padding: 10px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.music-1, .music-2, .music-3, .music-4, .music-5{
+    background-color:#282525;
+    width: 150px;
+    height: 210px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    
 }
 
-#image {
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  max-height: 100px;
-}
 
-/* ------------------ AUDIO CONTROLS ------------------ */
-.play {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  margin-top: 10px;
-}
+
+/* .play{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+} */
 
 input[type="range"] {
   width: 100px;
+  margin-bottom: 30px;
 }
 
 .play-button {
+  margin-left: 8px;
   background-color: white;
   color: black;
   transition: all 0.3s ease;
@@ -168,42 +157,64 @@ input[type="range"] {
   color: white;
 }
 
-/* ------------------ FOOTER ------------------ */
-.footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #282525;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+#image{
+    border-radius: 10px;
+    width:130px;
+    height: 100px;
 }
 
-.credit {
-  font-family: 'Courier New', Courier, monospace;
-  color: #1DB954;
-  margin-bottom: 10px;
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color:#282525;
+    width: auto;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    margin-top: 0px;
 }
 
-.foot {
-  color: white;
-  gap: 5px;
+.credit{
+    font-family: 'Courier New', Courier, monospace;
+    color:#1DB954;
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: flex-start;
+    margin-top: 10px;
 }
 
-/* ------------------ TABLET (≤768px) ------------------ */
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+
+/* Tablet View (≤768px) */
 @media (max-width: 768px) {
+
   .navbar {
     flex-direction: column;
+    align-items: center;
     height: auto;
-    padding: 10px;
+    padding: 15px;
+  }
+
+  .logo {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
   }
 
   ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
   }
 
   .main {
@@ -214,11 +225,15 @@ input[type="range"] {
   .left-content,
   .right-content {
     width: 90%;
+    height: auto;
     margin: 10px 0;
   }
 
   .music {
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    height: auto;
   }
 
   .music-1,
@@ -226,8 +241,9 @@ input[type="range"] {
   .music-3,
   .music-4,
   .music-5 {
-    width: 45%;
-    max-width: 200px;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
   }
 
   input[type="range"] {
@@ -236,28 +252,63 @@ input[type="range"] {
 
   .play-button {
     width: 100%;
+    margin: 10px 0;
   }
 
   #image {
+    width: 100%;
     height: auto;
+    object-fit: cover;
+  }
+
+  .footer {
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .credit h4 {
+    font-size: 14px;
+  }
+
+  .foot p {
+    font-size: 13px;
+  }
+
+  .create-playlist button {
+    width: 100%;
   }
 
   .links {
     flex-direction: column;
     align-items: flex-start;
+    gap: 5px;
+    padding: 10px;
   }
 
-  .footer .credit h4,
-  .footer .foot p {
-    font-size: 14px;
+  h2, h3, h4 {
+    font-size: 16px;
   }
+
 }
 
-/* ------------------ MOBILE (≤480px) ------------------ */
+
+/* Mobile View (≤480px) */
 @media (max-width: 480px) {
+
+  .navbar {
+    padding: 10px;
+  }
+
   h2 {
     font-size: 18px;
     text-align: center;
+  }
+
+  ul {
+    width: 100%;
+    align-items: center;
+    padding: 0;
   }
 
   li a {
@@ -273,13 +324,17 @@ input[type="range"] {
   .music-3,
   .music-4,
   .music-5 {
-    width: 90%;
-    max-width: 300px;
+    width: 95%;
+    padding: 8px;
   }
 
   .footer .credit h4,
   .footer .foot p {
     font-size: 12px;
+  }
+
+  .left-content, .right-content {
+    width: 95%;
   }
 
   .play-button {
@@ -290,8 +345,11 @@ input[type="range"] {
     font-size: 12px;
   }
 
-  h2, h3, h4, p, button {
-    font-size: 14px;
-    line-height: 1.4;
+  input[type="range"] {
+    width: 100%;
+  }
+
+  .music {
+    gap: 10px;
   }
 }
